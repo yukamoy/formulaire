@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+      <font color="48 3D 8B">
+          <h1>formulaire en HTML5 </h1> <br> 
+      </font>
+  </header>
+  <form action="">
+    <div>
+      <table>
+      <tr>
+        <td width="150" ><label for="Prénom"> Prénom : </label></td>
+        <td width="100" ><input type="text" pattern="[A-Za-z]" required></td>
+      </tr><br>
+      <tr>
+        <td><label>Nom :</label></td>
+        <td><input type="text" name="Nom" pattern="[A-Z]" required></td>
+      </tr><br>
+      <tr>
+        <td><label>Age :</label></td>
+        <td><input type="number" name="Age" required></td>
+      </tr><br>
+      <tr>
+        <td><label>Sexe:</label></td>
+        <td>
+          <input type="radio" name="Sexe" id="homme">
+            <label for="homme">homme</label><br>
+          <input type="radio" name="Sexe" id="femme">
+            <label for="femme">femme</label>
+        </td>
+      </tr><br>
+      <tr>
+        <td><label for="email">Adresse Mail </label></td><br>
+        <td><input type="email" name="email" id="email" required><br></td>
+      </tr><br>
+      <tr>
+        <td><label for="postal">Adresse postale</label></td>
+        <td><input type="text" name="Adresse " id="Adresse "></td>
+      </tr>
+      <tr>
+        <td><label for="postal">Code postale</label></td>
+        <td><input type="text" name="Codepostal" id="post" pattern="[0-9]" maxlength="5"></td>
+      </tr>
+      <tr>
+        <td><label for="Ville">Ville</label></td>
+        <td><input type="text" name="Ville" id="Ville"></td>
+      </tr>
+      <tr>
+        Métier exercé
+      </tr>
+      <tr>
+        <td><label for="dropdown"> Nationalité</label><br>
+          <select name=" Nationalité" id=" Nationalité">
+            <option value="fr">fr</option>
+            <option value="jp">jp</option>
+            <option value="">non</option>
+          </select></td>
+      </tr>
+      </table>
+
+        Nationalité
+        Date de naissance
+        Pays de naissance
+      </section>
+      <section>
+        Numéro de sécurité social
+        Numéro du passeport
+        Date de délivrance du passeport
+        Date de validité du passeport
+      </section>
+
+    </div>
+</form>
+</body>
+</html>
