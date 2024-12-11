@@ -8,20 +8,21 @@
 
 <body>
   <header>
-      <font color="48 3D 8B">
-          <h1>formulaire en HTML5 </h1> 
-      </font>
+    <H1>
+          formulaire en HTML5  
+    </H1>
   </header>
-  <form action="">
+
+  <form method="post">
     <div>
       <table>
         <tr>
-          <td width="250" ><label for="Prénom"> Prénom : </label></td>
-          <td width="100" ><input type="text" pattern="[A-Za-z]" required></td>
+          <td><label> Prénom : </label></td>
+          <td><input type="text" id="Prénom" pattern="[A-Za-z]" required></td>
         </tr>
         <tr>
           <td><label>Nom :</label></td>
-          <td><input type="text" name="Nom" pattern="[A-Z]" required></td>
+          <td><input type="text" name="Nom" id="Nom" pattern="[A-Z]" required></td>
         </tr>
         <tr>
           <td><label>Age :</label></td>
@@ -37,15 +38,15 @@
           </td>
         </tr>
         <tr>
-          <td><label for="email">Adresse Mail </label></td>
+          <td><label>Adresse Mail </label></td>
           <td><input type="email" name="email" id="email" required></td>
         </tr>
         <tr>
-          <td><label for="postal">Adresse postale</label></td>
-          <td><input type="text" name="Adresse " id="Adresse "></td>
+          <td><label>Adresse postale</label></td>
+          <td><input type="text" name="Adresse " id="Adresse"></td>
         </tr>
         <tr>
-          <td><label for="postal">Code postale</label></td>
+          <td><label>Code postale</label></td>
           <td><input type="text" name="Codepostal" id="post" pattern="[0-9]" maxlength="5"></td>
         </tr>
         <tr>
@@ -53,7 +54,7 @@
           <td><input type="text" name="Ville" id="Ville"></td>
         </tr>
         <tr>
-          <td><label for="dropdown Métier exercé">Métier exercé</label></td>
+          <td><label>Métier exercé</label></td>
           <td>
             <select name="Métier" id="Métier">
               <option label=" l'informatique"> l'informatique et du numérique</option>
@@ -74,9 +75,9 @@
           </td>
         </tr>
         <tr>
-          <td><label for="dropdown"> Nationalité</label> </td>
+          <td><label> Nationalité</label> </td>
           <td>
-            <select name=" Nationalité" id=" Nationalité">
+            <select name="Nationalité" id="Nationalité">
               <option value="fr">Français(e)</option>
               <option value="jp">Japonais(e)</option>
               <option value="Allemagne">Allemand(e)</option>
@@ -88,13 +89,13 @@
           </td>
         </tr>
         <tr>
-          <td><label for="naissance">Date de naissance</label></td>
-          <td><input type="date" name="naissance" id="naissance"></td>
+          <td><label>Date de naissance</label></td>
+          <td><input type="date" name="Date_naissance" id="naissance"></td>
         </tr>
         <tr>
-          <td><label for="naissance">Pays de naissance</label></td>
+          <td><label>Pays de naissance</label></td>
           <td>
-            <select name=" Nationalité" id="Pays de naissance">
+            <select name="Pays_naissance" id="Pays_de_naissance">
               <option value="fr">France</option>
               <option value="jp">Japon</option>
               <option value="Allemagne">Allemagne</option>
@@ -105,30 +106,28 @@
           </td>
         </tr>
         <tr>
-          <td><label for="naissance">Numéro de sécurité social</label></td>
-          <td><input type="text" name="Numéro de sécurité social" pattern="[0-9a-zA-Z]" maxlength="15"></label></td>
+          <td><label>Numéro de sécurité social</label></td>
+          <td><input type="text" name="Numéro de sécurité social" pattern="[0-9a-zA-Z]" maxlength="15"></td>
         </tr>
         <tr>
-          <td><label for="passeport">Numéro du passeport</label></td>
-          <td><input type="text" name="Numéro du passeport" pattern="[0-9a-zA-Z]" maxlength="10"></label></td>
+          <td><label>Numéro du passeport</label></td>
+          <td><input type="text" name="Numéro_passeport" pattern="[0-9a-zA-Z]" maxlength="10"></td>
         </tr>
         <tr>
-          <td><label for="Date de délivrance du passeport">Date de délivrance du passeport</label></td>
-          <td><input type="date" name="Date de délivrance du passeport" id="délivrance du passeport"></td>
+          <td><label>Date de délivrance du passeport</label></td>
+          <td><input type="date" name="Date_délivrance_passeport" id="délivrance_passeport"></td>
         </tr>
         <tr>
-          <td><label for="Date de validité du passeport">Date de validité du passeport</label></td>
-          <td><input type="date" name="Date de validité du passeport" id="validité du passeport"></td>
+          <td><label>Date de validité du passeport</label></td>
+          <td><input type="date" name="Date_validité_passeport" id="validité_passeport"></td>
         </tr>
       </table>
     </div>
      
-    <div style="margin: 40px;" >
+    <div>
           <input type="submit" value="submit">
     </div>
 
-
-    </div>
   </form>
 </body>
 </html>
