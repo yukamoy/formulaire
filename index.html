@@ -1,84 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>formulaire</title>
 </head>
+
 <body>
   <header>
       <font color="48 3D 8B">
-          <h1>formulaire en HTML5 </h1> <br> 
+          <h1>formulaire en HTML5 </h1> 
       </font>
   </header>
   <form action="">
     <div>
       <table>
-      <tr>
-        <td width="150" ><label for="Prénom"> Prénom : </label></td>
-        <td width="100" ><input type="text" pattern="[A-Za-z]" required></td>
-      </tr><br>
-      <tr>
-        <td><label>Nom :</label></td>
-        <td><input type="text" name="Nom" pattern="[A-Z]" required></td>
-      </tr><br>
-      <tr>
-        <td><label>Age :</label></td>
-        <td><input type="number" name="Age" required></td>
-      </tr><br>
-      <tr>
-        <td><label>Sexe:</label></td>
-        <td>
-          <input type="radio" name="Sexe" id="homme">
-            <label for="homme">homme</label><br>
-          <input type="radio" name="Sexe" id="femme">
-            <label for="femme">femme</label>
-        </td>
-      </tr><br>
-      <tr>
-        <td><label for="email">Adresse Mail </label></td><br>
-        <td><input type="email" name="email" id="email" required><br></td>
-      </tr><br>
-      <tr>
-        <td><label for="postal">Adresse postale</label></td>
-        <td><input type="text" name="Adresse " id="Adresse "></td>
-      </tr>
-      <tr>
-        <td><label for="postal">Code postale</label></td>
-        <td><input type="text" name="Codepostal" id="post" pattern="[0-9]" maxlength="5"></td>
-      </tr>
-      <tr>
-        <td><label for="Ville">Ville</label></td>
-        <td><input type="text" name="Ville" id="Ville"></td>
-      </tr>
-      <tr>
-        Métier exercé
-      </tr>
-      <tr>
-        <td><label for="dropdown"> Nationalité</label><br>
-          <select name=" Nationalité" id=" Nationalité">
-            <option value="fr">fr</option>
-            <option value="jp">jp</option>
-            <option value="">non</option>
-          </select></td>
-      </tr><input type="date" name="" id="">
-      <tr>
-        <td><label for="naissance">Date de naissance</label></td>
-        <td><input type="date" name="naissance" id="naissance"></td>
-      </tr>
+        <tr>
+          <td width="250" ><label for="Prénom"> Prénom : </label></td>
+          <td width="100" ><input type="text" pattern="[A-Za-z]" required></td>
+        </tr>
+        <tr>
+          <td><label>Nom :</label></td>
+          <td><input type="text" name="Nom" pattern="[A-Z]" required></td>
+        </tr>
+        <tr>
+          <td><label>Age :</label></td>
+          <td><input type="number" name="Age" required></td>
+        </tr>
+        <tr>
+          <td><label>Sexe:</label></td>
+          <td>
+            <input type="radio" name="Sexe" id="homme">
+              <label for="homme">homme</label>
+            <input type="radio" name="Sexe" id="femme">
+              <label for="femme">femme</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Adresse Mail </label></td>
+          <td><input type="email" name="email" id="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="postal">Adresse postale</label></td>
+          <td><input type="text" name="Adresse " id="Adresse "></td>
+        </tr>
+        <tr>
+          <td><label for="postal">Code postale</label></td>
+          <td><input type="text" name="Codepostal" id="post" pattern="[0-9]" maxlength="5"></td>
+        </tr>
+        <tr>
+          <td><label for="Ville">Ville</label></td>
+          <td><input type="text" name="Ville" id="Ville"></td>
+        </tr>
+        <tr>
+          <td><label for="dropdown Métier exercé">Métier exercé</label></td>
+          <td>
+            <select name="Métier" id="Métier">
+              <option label=" l'informatique"> l'informatique et du numérique</option>
+                  <option value="web">Développeur web (Frontend, Backend, Fullstack)</option>
+                  <option value="Data Analyst">Analyste de données (Data Analyst)</option>
+                  <option value="Administrateur">Administrateur système et rése</option>
+                  <option value="projet">Chef de projet informatique</option>
+                  <option value="cybersécurité">Spécialiste en cybersécurité</option>
+                  <option value="informatique_autre">autre</option>
+              <option label="le commerce et la vente ">le commerce et la vente </option>
+                  <option value="Commercial(e)">Commercial(e)</option>
+                  <option value="Responsable des ventes">Responsable des ventes</option>
+                  <option value="Chargé(e) de clientèle">Chargé(e) de clientèle</option>
+                  <option value="Agent immobilier">Agent immobilier</option>
+                  <option value="Chef de produit">Chef de produit</option>
+                  <option value="commerce_autre">autre</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="dropdown"> Nationalité</label> </td>
+          <td>
+            <select name=" Nationalité" id=" Nationalité">
+              <option value="fr">Français(e)</option>
+              <option value="jp">Japonais(e)</option>
+              <option value="Allemagne">Allemand(e)</option>
+              <option value="Maroc">Marocain(e)</option>
+              <option value="Italie">Italien(ne)</option>
+              <option value="Portugal">Portugais(e)</option>
+              <option value="autre">autre</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="naissance">Date de naissance</label></td>
+          <td><input type="date" name="naissance" id="naissance"></td>
+        </tr>
+        <tr>
+          <td><label for="naissance">Pays de naissance</label></td>
+          <td>
+            <select name=" Nationalité" id="Pays de naissance">
+              <option value="fr">France</option>
+              <option value="jp">Japon</option>
+              <option value="Allemagne">Allemagne</option>
+              <option value="Maroc">Maroc</option>
+              <option value="Italie">Italie</option>
+              <option value="Portugal">Portugal</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="naissance">Numéro de sécurité social</label></td>
+          <td><input type="text" name="Numéro de sécurité social" pattern="[0-9a-zA-Z]" maxlength="15"></label></td>
+        </tr>
+        <tr>
+          <td><label for="passeport">Numéro du passeport</label></td>
+          <td><input type="text" name="Numéro du passeport" pattern="[0-9a-zA-Z]" maxlength="10"></label></td>
+        </tr>
+        <tr>
+          <td><label for="Date de délivrance du passeport">Date de délivrance du passeport</label></td>
+          <td><input type="date" name="Date de délivrance du passeport" id="délivrance du passeport"></td>
+        </tr>
+        <tr>
+          <td><label for="Date de validité du passeport">Date de validité du passeport</label></td>
+          <td><input type="date" name="Date de validité du passeport" id="validité du passeport"></td>
+        </tr>
       </table>
+    </div>
+     
+    <div style="margin: 40px;" >
+          <input type="submit" value="submit">
+    </div>
 
-        Date de naissance
-        Pays de naissance
-      </section>
-      <section>
-        Numéro de sécurité social
-        Numéro du passeport
-        Date de délivrance du passeport
-        Date de validité du passeport
-      </section>
 
     </div>
-</form>
+  </form>
 </body>
 </html>
